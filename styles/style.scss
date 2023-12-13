@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inter
+
+}
+
+@import 'https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap';
+
+@import './modules/header.scss';
+@import './modules/main.scss';

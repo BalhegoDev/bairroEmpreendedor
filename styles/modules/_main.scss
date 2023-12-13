@@ -1,0 +1,44 @@
+main{
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+
+    .first-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2,p{
+            text-align: center;
+        }
+
+        h2{
+            margin: 1% 0;
+            text-decoration: underline #FA990C .2rem;
+        }
+
+        p{
+            font-size: x-large;
+        }
+
+        button{
+            width: 13%;
+            height: 2.3rem;
+            font-size: x-large;
+            margin-top: 2%;
+            cursor: pointer;
+            border-radius: 10px;
+            border: none;
+            background-color: #19D2C2;
+        }
+    }
+
+    .second-section{
+        background-color: #F2F2F2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 8%;
+    }
+}

@@ -1,0 +1,88 @@
+@import 'https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: inter;
+}
+
+header {
+  background-color: #1C1364;
+  position: relative;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .top-side {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .top-side #logo {
+  margin-left: 5%;
+}
+header .top-side nav {
+  margin-right: 5%;
+  width: 35%;
+}
+header .top-side nav ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+header .top-side nav ul li {
+  font-family: Josefin Slab;
+  font-size: xx-large;
+}
+header .top-side nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+header .banner {
+  width: 65%;
+  margin-top: 3%;
+}
+
+main {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+}
+main .first-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .first-section h2, main .first-section p {
+  text-align: center;
+}
+main .first-section h2 {
+  margin: 1% 0;
+  -webkit-text-decoration: underline #FA990C 0.2rem;
+          text-decoration: underline #FA990C 0.2rem;
+}
+main .first-section p {
+  font-size: x-large;
+}
+main .first-section button {
+  width: 13%;
+  height: 2.3rem;
+  font-size: x-large;
+  margin-top: 2%;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  background-color: #19D2C2;
+}
+main .second-section {
+  background-color: #F2F2F2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8%;
+}/*# sourceMappingURL=style.css.map */
