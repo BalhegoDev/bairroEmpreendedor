@@ -40,5 +40,82 @@ main{
         flex-direction: column;
         align-items: center;
         margin-top: 8%;
+
+        h2{
+            margin-top: 5%;
+            font-size: 2.5rem;
+        }
+        .div-flex{
+            margin-top: 5%;
+            width: 80%;
+            display: flex;
+            justify-content: space-evenly;
+            
+            .card{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 18rem;
+                height: 18rem;
+                background-color: #1C1364;
+                color: #FA990C;
+                border-radius: 250px;
+                margin-bottom: 3%;
+                cursor: pointer;
+            }
+        }
     }
+
+    .third-section{
+        display: flex;
+        flex-direction: column;
+        .sub-title{
+            text-align: center;
+            margin-bottom: 3%;
+            margin-top: 3%;
+        }
+
+        .card-retangular{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 10% 1fr 1fr;
+            width: 85%;
+            height: 30rem;
+            margin: auto;
+            background-color: #F2F2F2;
+
+            h2{
+                grid-row: 1/2;
+                grid-column: 2/3;
+                justify-self: center;
+            }
+
+            p{
+                grid-row: 2/3;
+                grid-column: 2/3;
+                justify-self: center;
+                align-self: center;
+                font-size: 1.8rem;
+            }
+
+            button{
+                grid-row: 3/4;
+                grid-column: 2/3;
+                justify-self: center;
+                width: 50%;
+                height: 2.3rem;
+                font-size: x-large;
+                margin-top: 2%;
+                cursor: pointer;
+                border-radius: 10px;
+                border: none;
+                background-color: #19D2C2;
+            }
+
+            img{
+                grid-column: 1/2;
+            }
+        }
+    }
+
 }
