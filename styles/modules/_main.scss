@@ -67,6 +67,10 @@ main{
                 color: #FA990C;
                 border-radius: 250px;
                 margin-bottom: 3%;
+                a{
+                    color: #FA990C;
+                    text-decoration: none;                    
+                }
                 cursor: pointer;
                 @media only screen and (max-width:1440px){
                     width: 15rem;
@@ -98,15 +102,17 @@ main{
             margin: auto;
             background-color: #F2F2F2;
             border-radius: 20px;
-            @media only screen and (max-width:1024px){
+            padding: 1.4rem;
+            @media only screen and (max-width:1280px){
                 grid-template-rows: 10% 1fr 10%;
                 width: 95%;
-                height: 27rem;
+                height: 31rem;
             }
             h2{
                 grid-row: 1/2;
                 grid-column: 2/3;
                 justify-self: center;
+                text-align: center;
                 @media only screen and (max-width:1024px){
                     margin-left:5%;
                 }
@@ -118,7 +124,7 @@ main{
                 justify-self: center;
                 align-self: center;
                 font-size: 1.8rem;
-                @media only screen and (max-width:1024px){
+                @media only screen and (max-width:1280px){
                     font-size: 1.3rem;
                     text-align: center;
                 }
@@ -151,9 +157,10 @@ main{
 
         .div-flex{
             display: flex;
-            width: 80%;
+            width: 100%;
             justify-content: space-evenly;
             margin: 5% auto;
+            
             
             .container{
                 @media only screen and (max-width:1024px){

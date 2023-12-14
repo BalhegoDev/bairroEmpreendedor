@@ -14,10 +14,10 @@
             <img id="logo" src="../imgs/Logo.png" alt="logo do bairro Empreendedor">
             <nav>
                 <ul>
-                    <li><a href="./quemSomos.html">quem somos</a></li>
-                    <li><a href="">objetivos</a></li>
-                    <li><a href="">notícias</a></li>
-                    <li><a href="">contato</a></li>
+                    <li><a href="#first-section">quem somos</a></li>
+                    <li><a href="#div-flex">objetivos</a></li>
+                    <li><a href="#card-retangular">notícias</a></li>
+                    <li><a href="./contato.html">contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -25,10 +25,10 @@
     </header>
 
     <main>
-        <section class="first-section">
+        <section id="first-section" class="first-section">
             <h2 data-aos="fade-up">Programa Bairro Empreendedor</h2>
             <p data-aos="fade-up">O programa Bairro Empreendedor, desenvolvido pela Prefeitura de Pelotas, tem o objetivo de fortalecer a economia local, através da organização e da valorização da comunidade e dos pequenos negócios localizados em todas as regiões da cidade.</p>
-            <button data-aos="fade-up">SAIBA MAIS</button>
+            <button data-aos="fade-up"><a style="color:white;text-decoration: none;" href="./quemSomos.html">SAIBA MAIS</a></button>
         </section>
         <section class="second-section">
             <h2>Nossos Eixos Estruturais</h2>
@@ -40,7 +40,7 @@
                     <p>REDE EMPREENDEDORA</p>
                 </div>
                 <div class="card">
-                    <p>QUALIFICAÇÃO</p>
+                    <a href="./qualificacao.html">QUALIFICAÇÃO</a>
                 </div>
                 <div class="card">
                     <p>FINANCEIRO</p>
@@ -49,14 +49,14 @@
         </section>
         <section class="third-section">
             <h2 data-aos="fade-up" class="sub-title">Principais Notícias</h2>
-            <div data-aos="fade-right" class="card-retangular">
+            <div data-aos="fade-right" id="card-retangular" class="card-retangular">
                 <img src="../imgs/Notícia.png" alt="imagem de uma notícia">
                 <h2>Prefeitura lança o projeto Bairro Empreendedor</h2>
                 <p>As ações estão previstas no Plano de Governo da prefeita Paula Mascarenhas e começarão pela Colônia de Pescadores Z3. Outras regiões da cidade também serão contempladas</p>
                 <button>LEIA MAIS</button>
             </div>
 
-            <div class="div-flex">
+            <div class="div-flex" id="div-flex">
                 <div data-aos="fade-up" class="container">
                     <div class="bground" id="bground1">
                         <img src="../imgs/Newsft1.png" alt=""> </div>
@@ -101,6 +101,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-      </script>
+    </script>
 </body>
 </html>

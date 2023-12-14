@@ -5,12 +5,18 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    .banner-qualificacao{
+        position: relative;
+        bottom: -17%;
+        height: 17rem;
+    }
     
     .banner-page2{
-        @media only screen and (max-width:1024px){
+        @media only screen and (max-width:1280px){
             position: absolute;
             width: 20rem;
-            height: 15rem;
+            height: 350px;
             bottom: -15%;
         }
         
@@ -27,25 +33,25 @@ header{
         }
 
         nav{
-            margin-right: 5%;
-            width: 35%;
+            width: 30%;
             @media only screen and (max-width:1440px){
                 width: 50%;
             }
-            @media only screen and (max-width:1024px){
+            @media only screen and (max-width:1280px){
                 width: 75%;
             }
             ul{
                 width: 100%;
                 display: flex;
                 list-style: none;
-                justify-content: space-around;
+                justify-content: space-evenly;
                 li{
-                    font-family: Josefin Slab;
-                    font-size: xx-large;
+                    font-size: 1.4rem;
                     a{
+                        text-transform: uppercase;
                         color: white;
                         text-decoration: none;
+                        font-family: Josefin Slab;
                     }
                 }
             }

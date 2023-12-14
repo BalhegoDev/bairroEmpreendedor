@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap';
-@import 'https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,100&display=swap';
 @import "https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=Josefin+Slab:wght@100;400&display=swap";
 * {
   margin: 0;
@@ -16,11 +16,16 @@ header {
   flex-direction: column;
   align-items: center;
 }
-@media only screen and (max-width: 1024px) {
+header .banner-qualificacao {
+  position: relative;
+  bottom: -17%;
+  height: 17rem;
+}
+@media only screen and (max-width: 1280px) {
   header .banner-page2 {
     position: absolute;
     width: 20rem;
-    height: 15rem;
+    height: 350px;
     bottom: -15%;
   }
 }
@@ -34,15 +39,14 @@ header .top-side #logo {
   margin-left: 5%;
 }
 header .top-side nav {
-  margin-right: 5%;
-  width: 35%;
+  width: 30%;
 }
 @media only screen and (max-width: 1440px) {
   header .top-side nav {
     width: 50%;
   }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1280px) {
   header .top-side nav {
     width: 75%;
   }
@@ -51,15 +55,16 @@ header .top-side nav ul {
   width: 100%;
   display: flex;
   list-style: none;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 header .top-side nav ul li {
-  font-family: Josefin Slab;
-  font-size: xx-large;
+  font-size: 1.4rem;
 }
 header .top-side nav ul li a {
+  text-transform: uppercase;
   color: white;
   text-decoration: none;
+  font-family: Josefin Slab;
 }
 header .banner {
   width: 65%;
@@ -137,6 +142,10 @@ main .second-section .div-flex .card {
   margin-bottom: 3%;
   cursor: pointer;
 }
+main .second-section .div-flex .card a {
+  color: #FA990C;
+  text-decoration: none;
+}
 @media only screen and (max-width: 1440px) {
   main .second-section .div-flex .card {
     width: 15rem;
@@ -167,18 +176,20 @@ main .third-section .card-retangular {
   margin: auto;
   background-color: #F2F2F2;
   border-radius: 20px;
+  padding: 1.4rem;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1280px) {
   main .third-section .card-retangular {
     grid-template-rows: 10% 1fr 10%;
     width: 95%;
-    height: 27rem;
+    height: 31rem;
   }
 }
 main .third-section .card-retangular h2 {
   grid-row: 1/2;
   grid-column: 2/3;
   justify-self: center;
+  text-align: center;
 }
 @media only screen and (max-width: 1024px) {
   main .third-section .card-retangular h2 {
@@ -192,7 +203,7 @@ main .third-section .card-retangular p {
   align-self: center;
   font-size: 1.8rem;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1280px) {
   main .third-section .card-retangular p {
     font-size: 1.3rem;
     text-align: center;
@@ -226,7 +237,7 @@ main .third-section .card-retangular img {
 }
 main .third-section .div-flex {
   display: flex;
-  width: 80%;
+  width: 100%;
   justify-content: space-evenly;
   margin: 5% auto;
 }
@@ -378,13 +389,13 @@ footer p {
 .main-page2 .second-section-page2 .cards .card {
   display: flex;
   align-items: center;
-  width: 18rem;
-  height: 18rem;
+  width: 12rem;
+  height: 12rem;
   background-color: #1C1364;
   color: #FA990C;
   border-radius: 250px;
   cursor: pointer;
-  margin-right: 8%;
+  margin-right: 10%;
   margin-top: 5%;
 }
 @media only screen and (max-width: 1024px) {
@@ -394,4 +405,140 @@ footer p {
 }
 .main-page2 .second-section-page2 .cards .card p {
   text-align: center;
+}
+
+.main-contato {
+  margin-top: 0;
+}
+.main-contato .container-geral {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 5%;
+  margin-top: 10%;
+}
+.main-contato .container-geral form {
+  display: flex;
+  flex-direction: column;
+  background-color: #1C1364;
+  width: 35rem;
+  align-items: center;
+  padding: 1.2rem;
+}
+.main-contato .container-geral form button {
+  margin-top: 2%;
+  border: none;
+  width: 30%;
+  border-radius: 15px;
+  letter-spacing: 4px;
+  font-size: 1.4rem;
+  background-color: #19D2C2;
+  cursor: pointer;
+}
+.main-contato .container-geral form h2 {
+  -webkit-text-decoration: #19D2C2 underline;
+          text-decoration: #19D2C2 underline;
+  color: white;
+  text-align: center;
+}
+.main-contato .container-geral form input {
+  background-color: #F7F7F7;
+  outline: none;
+  margin-top: 5%;
+  border: none;
+  width: 20rem;
+  height: 2rem;
+  border-radius: 20px;
+  padding: 1.3rem;
+}
+.main-contato .container-geral form textarea {
+  background-color: #F7F7F7;
+  margin-top: 5%;
+  border-radius: 20px;
+  outline: none;
+  width: 25rem;
+  padding: 1rem;
+}
+.main-contato .container-geral .contatos {
+  background-color: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 25rem;
+}
+.main-contato .container-geral .contatos h2 {
+  -webkit-text-decoration: underline #FA990C;
+          text-decoration: underline #FA990C;
+  text-align: center;
+}
+.main-contato .container-geral .contatos nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-areas: "email" "youtube" "facebook" "instagram";
+}
+.main-contato .container-geral .contatos nav ul li, .main-contato .container-geral .contatos nav ul img {
+  margin-top: 5%;
+}
+.main-contato .container-geral .contatos nav ul .emailIcon {
+  grid-area: email;
+  margin-left: 2%;
+}
+.main-contato .container-geral .contatos nav ul .liEmail {
+  grid-area: email;
+  align-self: center;
+  text-align: end;
+}
+.main-contato .container-geral .contatos nav ul .youtubeIcon {
+  grid-area: youtube;
+}
+.main-contato .container-geral .contatos nav ul .liYoutube {
+  grid-area: youtube;
+  justify-self: center;
+  align-self: center;
+}
+.main-contato .container-geral .contatos nav ul .facebookIcon {
+  grid-area: facebook;
+}
+.main-contato .container-geral .contatos nav ul .liFacebook {
+  grid-area: facebook;
+  justify-self: center;
+  align-self: center;
+}
+.main-contato .container-geral .contatos nav ul .instagramIcon {
+  grid-area: instagram;
+}
+.main-contato .container-geral .contatos nav ul .liInstagram {
+  grid-area: instagram;
+  justify-self: center;
+  align-self: center;
+}
+
+.section-qualificacao {
+  display: flex;
+  flex-direction: column;
+}
+.section-qualificacao .title {
+  text-align: center;
+  -webkit-text-decoration: #FA990C underline;
+          text-decoration: #FA990C underline;
+}
+.section-qualificacao p {
+  text-align: center;
+  padding: 0.7rem;
+  font-size: 1.4rem;
+}
+.section-qualificacao .projects {
+  text-align: center;
+}
+.section-qualificacao .card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+}
+.section-qualificacao .card img {
+  grid-column: 1/2;
+}
+.section-qualificacao .card h2, .section-qualificacao .card p {
+  grid-column: 2/3;
 }/*# sourceMappingURL=style.css.map */
