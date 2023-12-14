@@ -1,0 +1,22 @@
+{
+  "name": "bairroempreendedor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bros12Lek/bairroEmpreendedor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bros12Lek/bairroEmpreendedor/issues"
+  },
+  "homepage": "https://github.com/Bros12Lek/bairroEmpreendedor#readme",
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}

@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Bairro Empreendedor</title>
 </head>
+    <!--https://github.com/Bros12Lek/bairroEmpreendedor.git-->
 <body>
     <header>
         <div class="top-side">
@@ -24,9 +26,9 @@
 
     <main>
         <section class="first-section">
-            <h2>Programa Bairro Empreendedor</h2>
-            <p>O programa Bairro Empreendedor, desenvolvido pela Prefeitura de Pelotas, tem o objetivo de fortalecer a economia local, através da organização e da valorização da comunidade e dos pequenos negócios localizados em todas as regiões da cidade.</p>
-            <button>SAIBA MAIS</button>
+            <h2 data-aos="fade-up">Programa Bairro Empreendedor</h2>
+            <p data-aos="fade-up">O programa Bairro Empreendedor, desenvolvido pela Prefeitura de Pelotas, tem o objetivo de fortalecer a economia local, através da organização e da valorização da comunidade e dos pequenos negócios localizados em todas as regiões da cidade.</p>
+            <button data-aos="fade-up">SAIBA MAIS</button>
         </section>
         <section class="second-section">
             <h2>Nossos Eixos Estruturais</h2>
@@ -46,15 +48,59 @@
             </div>
         </section>
         <section class="third-section">
-            <h2 class="sub-title">Principais Notícias</h2>
-            <div class="card-retangular">
+            <h2 data-aos="fade-up" class="sub-title">Principais Notícias</h2>
+            <div data-aos="fade-right" class="card-retangular">
                 <img src="../imgs/Notícia.png" alt="imagem de uma notícia">
                 <h2>Prefeitura lança o projeto Bairro Empreendedor</h2>
                 <p>As ações estão previstas no Plano de Governo da prefeita Paula Mascarenhas e começarão pela Colônia de Pescadores Z3. Outras regiões da cidade também serão contempladas</p>
                 <button>LEIA MAIS</button>
             </div>
+
+            <div class="div-flex">
+                <div data-aos="fade-up" class="container">
+                    <div class="bground" id="bground1">
+                        <img src="../imgs/Newsft1.png" alt=""> </div>
+                    <div class="box">
+                        <p>Bairro Empreendedor ganhou o 1° Lugar no Prêmio de Boas Práticas</p>
+                        <a href="./">LEIA MAIS</a>
+                    </div>
+                </div>
+        
+                <div data-aos="fade-up" class="container">
+                    <div class="bground" id="bground2">
+                        <img src="../imgs/Newsft2.png" alt="">
+                    </div>
+                    <div class="box">
+                        <p>Hoje, durante a realização da Trilha Empreendedora, os empreendedores do ...</p>
+                        <a href="./">LEIA MAIS</a>
+                    </div>    
+                </div>
+                <div data-aos="fade-up" class="container">
+                    <div class="bground" id="bground3">
+                        <img src="../imgs/Newsft3.png" alt="">
+                    </div>
+                    <div class="box">
+                        <p>Durante as atividades de comemoração dos 211 anos de Pelotas ...</p>
+                        <a href="./">LEIA MAIS</a>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="dentro">
+            <img class="logo" src="../imgs/Logo.png" alt="">
+            <div class="icons">
+                <img src="../imgs/Youtube.png" alt="">
+                <img src="../imgs/FBicon.png" alt="">
+                <img src="../imgs/Instaicon.png" alt="">
+            </div>
+            <p>Bairro Empreendedor &copy; 2023</p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

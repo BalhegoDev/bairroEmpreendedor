@@ -13,7 +13,7 @@ main{
         }
 
         h2{
-            margin: 1% 0;
+            margin: 10% 0 3% 0;
             text-decoration: underline #FA990C .2rem;
         }
 
@@ -83,6 +83,7 @@ main{
             height: 30rem;
             margin: auto;
             background-color: #F2F2F2;
+            border-radius: 20px;
 
             h2{
                 grid-row: 1/2;
@@ -115,6 +116,13 @@ main{
             img{
                 grid-column: 1/2;
             }
+        }
+
+        .div-flex{
+            display: flex;
+            width: 80%;
+            justify-content: space-evenly;
+            margin: 5% auto;
         }
     }
 
