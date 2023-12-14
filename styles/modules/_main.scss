@@ -30,6 +30,9 @@ main{
             border-radius: 10px;
             border: none;
             background-color: #19D2C2;
+            @media only screen and (max-width:1024px){
+                width: 15%;
+            }
         }
     }
 
@@ -50,6 +53,9 @@ main{
             width: 80%;
             display: flex;
             justify-content: space-evenly;
+            @media only screen and (max-width:1024px){
+                justify-content: space-around;
+            }
             
             .card{
                 display: flex;
@@ -62,6 +68,14 @@ main{
                 border-radius: 250px;
                 margin-bottom: 3%;
                 cursor: pointer;
+                @media only screen and (max-width:1440px){
+                    width: 15rem;
+                    height: 15rem;
+                }
+                @media only screen and (max-width:1024px){
+                    width: 12rem;
+                    height: 12rem;
+                }
             }
         }
     }
@@ -84,11 +98,18 @@ main{
             margin: auto;
             background-color: #F2F2F2;
             border-radius: 20px;
-
+            @media only screen and (max-width:1024px){
+                grid-template-rows: 10% 1fr 10%;
+                width: 95%;
+                height: 27rem;
+            }
             h2{
                 grid-row: 1/2;
                 grid-column: 2/3;
                 justify-self: center;
+                @media only screen and (max-width:1024px){
+                    margin-left:5%;
+                }
             }
 
             p{
@@ -97,6 +118,10 @@ main{
                 justify-self: center;
                 align-self: center;
                 font-size: 1.8rem;
+                @media only screen and (max-width:1024px){
+                    font-size: 1.3rem;
+                    text-align: center;
+                }
             }
 
             button{
@@ -111,10 +136,16 @@ main{
                 border-radius: 10px;
                 border: none;
                 background-color: #19D2C2;
+                @media only screen and (max-width:1024px){
+                    align-self: center;
+                }
             }
 
             img{
                 grid-column: 1/2;
+                @media only screen and (max-width:1024px){
+                    width: 40rem;
+                }
             }
         }
 
@@ -123,6 +154,18 @@ main{
             width: 80%;
             justify-content: space-evenly;
             margin: 5% auto;
+            
+            .container{
+                @media only screen and (max-width:1024px){
+                    width: 15rem;
+                    margin-top: 5%;
+                }
+                img{
+                    @media only screen and (max-width:1024px){
+                        width: 14.9rem;
+                    }
+                }
+            }
         }
     }
 

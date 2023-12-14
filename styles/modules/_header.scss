@@ -6,6 +6,15 @@ header{
     flex-direction: column;
     align-items: center;
     
+    .banner-page2{
+        @media only screen and (max-width:1024px){
+            position: absolute;
+            width: 20rem;
+            height: 15rem;
+            bottom: -15%;
+        }
+        
+    }
 
     .top-side{
         width: 100%;
@@ -20,7 +29,12 @@ header{
         nav{
             margin-right: 5%;
             width: 35%;
-
+            @media only screen and (max-width:1440px){
+                width: 50%;
+            }
+            @media only screen and (max-width:1024px){
+                width: 75%;
+            }
             ul{
                 width: 100%;
                 display: flex;
