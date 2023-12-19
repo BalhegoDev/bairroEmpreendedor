@@ -514,31 +514,87 @@ footer p {
   align-self: center;
 }
 
-.section-qualificacao {
-  display: flex;
+.headerQualificacao .banner {
+  position: absolute;
+  bottom: -5rem;
+}
+
+main .first-section-qualificacao {
+  flex-direction: column;
+  padding: 5rem;
+  margin-bottom: 10%;
+  align-items: center;
+}
+main .first-section-qualificacao h2 {
+  text-align: center;
+  -webkit-text-decoration: underline #FA990C;
+          text-decoration: underline #FA990C;
+  font-size: 2.5rem;
+}
+main .first-section-qualificacao p {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1%;
+}
+main .second-section-qualificacao {
+  margin-bottom: 5%;
   flex-direction: column;
 }
-.section-qualificacao .title {
+main .second-section-qualificacao h2 {
   text-align: center;
-  -webkit-text-decoration: #FA990C underline;
-          text-decoration: #FA990C underline;
+  -webkit-text-decoration: underline #FA990C;
+          text-decoration: underline #FA990C;
+  font-size: 2.5rem;
+  margin-bottom: 8%;
 }
-.section-qualificacao p {
-  text-align: center;
-  padding: 0.7rem;
-  font-size: 1.4rem;
-}
-.section-qualificacao .projects {
-  text-align: center;
-}
-.section-qualificacao .card {
+main .second-section-qualificacao .card {
+  height: 41.5rem;
+  border-radius: 52px;
+  background-color: #F2F2F2;
+  margin: 0 auto 3% auto;
+  width: 80%;
   display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: auto 1fr;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 20% 1fr;
 }
-.section-qualificacao .card img {
-  grid-column: 1/2;
+@media only screen and (max-width: 1440px) {
+  main .second-section-qualificacao .card {
+    height: 27rem;
+  }
 }
-.section-qualificacao .card h2, .section-qualificacao .card p {
+@media only screen and (max-width: 1280px) {
+  main .second-section-qualificacao .card {
+    width: 95%;
+    height: 24rem;
+  }
+}
+main .second-section-qualificacao .card img {
+  width: 62rem;
+}
+@media only screen and (max-width: 1440px) {
+  main .second-section-qualificacao .card img {
+    width: 40rem;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  main .second-section-qualificacao .card img {
+    width: 36rem;
+  }
+}
+main .second-section-qualificacao .card h2 {
+  text-align: center;
+  margin-top: 15%;
+  justify-self: center;
+  align-self: center;
+}
+main .second-section-qualificacao .card p {
+  align-self: center;
+  font-size: 2.5rem;
   grid-column: 2/3;
+  margin-right: 8%;
+}
+@media only screen and (max-width: 1440px) {
+  main .second-section-qualificacao .card p {
+    font-size: 1.8rem;
+  }
 }/*# sourceMappingURL=style.css.map */

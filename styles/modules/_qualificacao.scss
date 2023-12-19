@@ -1,0 +1,83 @@
+.headerQualificacao{
+    .banner{
+        position: absolute;
+        bottom: -5rem;
+    }
+}
+
+main{
+    .first-section-qualificacao{
+        flex-direction: column;
+        padding: 5rem;
+        margin-bottom: 10%;
+        align-items: center;
+
+        h2{
+            text-align: center;
+            text-decoration: underline #FA990C;
+            font-size: 2.5rem;
+        }
+        p{
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 1%;
+        }
+    }
+    .second-section-qualificacao{
+        margin-bottom: 5%;
+        flex-direction: column;
+
+        h2{
+            text-align: center;
+            text-decoration: underline #FA990C;
+            font-size: 2.5rem;
+            margin-bottom: 8%;
+        }
+
+        .card{
+            height: 41.5rem;
+            border-radius: 52px;
+            background-color: #F2F2F2;
+            margin: 0 auto 3% auto;
+            width:80%;
+            display: grid;
+            grid-template-columns: 60% 40%;
+            grid-template-rows: 20% 1fr ;
+            @media only screen and (max-width:1440px){
+                height: 27rem;
+            }
+            @media only screen and (max-width:1280px){
+                width: 95%;
+                height: 24rem;
+            }
+
+            img{
+                width: 62rem;
+                @media only screen and (max-width:1440px){
+                    width: 40rem;
+                }
+                @media only screen and (max-width:1280px){
+                    width: 36rem;
+                }
+            }
+            h2{
+                text-align: center;
+                margin-top: 15%;
+                justify-self: center;
+                align-self: center;
+            }
+            p{
+                align-self: center;
+                font-size: 2.5rem;
+                grid-column: 2/3;
+                margin-right:8%;
+                @media only screen and (max-width:1440px){
+                    font-size: 1.8rem;
+                }
+            }
+
+
+
+        }
+    }
+}
